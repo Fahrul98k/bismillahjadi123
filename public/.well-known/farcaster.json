@@ -1,0 +1,44 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Taik Mini App",
+    "iconUrl": "https://your-domain.com/logo.png",
+    "homeUrl": "https://your-domain.com",
+    "imageUrl": "https://your-domain.com/og-image.png",
+    "buttonTitle": "🚀 Mulai",
+    "splashImageUrl": "https://your-domain.com/logo.png",
+    "splashBackgroundColor": "#0ea5e9",
+    "subtitle": "Mini App Farcaster dengan Next.js",
+    "description": "Aplikasi mini yang dibangun dengan Next.js dan Farcaster SDK untuk demonstrasi fitur-fitur Mini App.",
+    "screenshotUrls": [
+      "https://your-domain.com/screenshot1.png",
+      "https://your-domain.com/screenshot2.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "demo",
+      "nextjs",
+      "farcaster",
+      "miniapp"
+    ],
+    "heroImageUrl": "https://your-domain.com/og-image.png",
+    "tagline": "Mini App Farcaster dengan Next.js",
+    "ogTitle": "Taik Mini App",
+    "ogDescription": "Mini App Farcaster yang dibuat dengan Next.js",
+    "ogImageUrl": "https://your-domain.com/og-image.png",
+    "requiredChains": [
+      "eip155:8453"
+    ],
+    "requiredCapabilities": [
+      "actions.signIn",
+      "wallet.getEthereumProvider",
+      "actions.composeCast",
+      "actions.addMiniApp",
+      "actions.viewProfile",
+      "actions.openUrl",
+      "haptics.impactOccurred",
+      "haptics.notificationOccurred",
+      "haptics.selectionChanged"
+    ]
+  }
+} 

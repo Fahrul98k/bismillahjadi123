@@ -159,3 +159,6 @@ MIT License - lihat file [LICENSE](LICENSE) untuk detail.
 - [Next.js](https://nextjs.org) untuk framework React
 - [Wagmi](https://wagmi.sh) untuk wallet integration
 - [Tailwind CSS](https://tailwindcss.com) untuk styling 
+```
+
+</rewritten_file>

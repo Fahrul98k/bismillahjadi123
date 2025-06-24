@@ -2,12 +2,12 @@
   "frame": {
     "version": "1",
     "name": "Farcaster MiniApp Clean",
-    "iconUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
-    "splashImageUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
+    "iconUrl": "https://bismillahjadi-faos-git-main-kacomakassars-projects.vercel.app/logo.png",
+    "splashImageUrl": "https://bismillahjadi-faos-git-main-kacomakassars-projects.vercel.app/logo.png",
     "splashBackgroundColor": "#0ea5e9",
-    "homeUrl": "https://bismillahjadi-faos.vercel.app",
-    "subtitle": "Mini App Farcaster modern",
-    "description": "Aplikasi mini modern dengan Next.js dan Farcaster SDK terbaru.",
+    "homeUrl": "https://bismillahjadi-faos-git-main-kacomakassars-projects.vercel.app",
+    "subtitle": "Mini App modern Farcaster",
+    "description": "Aplikasi mini modern Next.js dan Farcaster SDK.",
     "primaryCategory": "social",
     "tags": [
       "farcaster",

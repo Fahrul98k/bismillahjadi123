@@ -2,16 +2,16 @@
   "frame": {
     "version": "1",
     "name": "Farcaster MiniApp Clean",
-    "iconUrl": "https://bismillahjadi-79vr.vercel.app/logo.png",
-    "homeUrl": "https://bismillahjadi-79vr.vercel.app",
-    "imageUrl": "https://bismillahjadi-79vr.vercel.app/og-image.png",
+    "iconUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
+    "homeUrl": "https://bismillahjadi-faos.vercel.app",
+    "imageUrl": "https://bismillahjadi-faos.vercel.app/og-image.png",
     "buttonTitle": "🚀 Mulai",
-    "splashImageUrl": "https://bismillahjadi-79vr.vercel.app/logo.png",
+    "splashImageUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
     "splashBackgroundColor": "#0ea5e9",
     "subtitle": "Mini App Farcaster modern, siap deploy Vercel",
     "description": "Aplikasi mini modern dengan Next.js dan Farcaster SDK terbaru.",
     "screenshotUrls": [
-      "https://bismillahjadi-79vr.vercel.app/screenshot1.png"
+      "https://bismillahjadi-faos.vercel.app/screenshot1.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -19,11 +19,11 @@
       "miniapp",
       "nextjs"
     ],
-    "heroImageUrl": "https://bismillahjadi-79vr.vercel.app/og-image.png",
+    "heroImageUrl": "https://bismillahjadi-faos.vercel.app/og-image.png",
     "tagline": "Mini App Farcaster modern, siap deploy Vercel",
     "ogTitle": "Farcaster MiniApp Clean",
     "ogDescription": "Mini App Farcaster modern, siap deploy Vercel",
-    "ogImageUrl": "https://bismillahjadi-79vr.vercel.app/og-image.png",
+    "ogImageUrl": "https://bismillahjadi-faos.vercel.app/og-image.png",
     "requiredChains": [
       "eip155:8453"
     ],

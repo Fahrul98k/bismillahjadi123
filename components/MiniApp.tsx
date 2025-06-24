@@ -14,8 +14,9 @@ export default function MiniApp() {
         // Cek environment MiniApp
         const isMiniApp = await sdk.isInMiniApp()
         if (isMiniApp) {
-          setContext(sdk.context)
-          setUser(sdk.context.user)
+          const ctx = await sdk.context
+          setContext(ctx)
+          setUser(ctx.user)
           await sdk.actions.ready()
         }
         setIsReady(true)

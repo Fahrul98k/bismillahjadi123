@@ -1,31 +1,24 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'Taik Mini App',
-  description: 'Mini App Farcaster yang dibuat dengan Next.js',
-  metadataBase: new URL('https://bismillahjadi.vercel.app'),
+  title: 'Farcaster MiniApp Clean',
+  description: 'Mini App Farcaster modern, siap deploy Vercel',
+  metadataBase: new URL('https://your-vercel-domain.vercel.app'),
   openGraph: {
-    title: 'Taik Mini App',
-    description: 'Mini App Farcaster yang dibuat dengan Next.js',
+    title: 'Farcaster MiniApp Clean',
+    description: 'Mini App Farcaster modern, siap deploy Vercel',
     images: ['/og-image.png'],
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
       <head>
         <link rel="preconnect" href="https://auth.farcaster.xyz" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 } 

@@ -1,39 +1,37 @@
 {
   "frame": {
     "version": "1",
-    "name": "Taik Mini App",
-    "iconUrl": "https://bismillahjadi.vercel.app/logo.png",
-    "homeUrl": "https://bismillahjadi.vercel.app",
-    "imageUrl": "https://bismillahjadi.vercel.app/og-image.png",
+    "name": "Farcaster MiniApp Clean",
+    "iconUrl": "https://your-vercel-domain.vercel.app/logo.png",
+    "homeUrl": "https://your-vercel-domain.vercel.app",
+    "imageUrl": "https://your-vercel-domain.vercel.app/og-image.png",
     "buttonTitle": "🚀 Mulai",
-    "splashImageUrl": "https://bismillahjadi.vercel.app/logo.png",
+    "splashImageUrl": "https://your-vercel-domain.vercel.app/logo.png",
     "splashBackgroundColor": "#0ea5e9",
-    "subtitle": "Mini App Farcaster dengan Next.js",
-    "description": "Aplikasi mini yang dibangun dengan Next.js dan Farcaster SDK untuk demonstrasi fitur-fitur Mini App.",
+    "subtitle": "Mini App Farcaster modern, siap deploy Vercel",
+    "description": "Aplikasi mini modern dengan Next.js dan Farcaster SDK terbaru.",
     "screenshotUrls": [
-      "https://bismillahjadi.vercel.app/screenshot1.png",
-      "https://bismillahjadi.vercel.app/screenshot2.png"
+      "https://your-vercel-domain.vercel.app/screenshot1.png"
     ],
     "primaryCategory": "social",
     "tags": [
-      "demo",
-      "nextjs",
       "farcaster",
-      "miniapp"
+      "miniapp",
+      "nextjs"
     ],
-    "heroImageUrl": "https://bismillahjadi.vercel.app/og-image.png",
-    "tagline": "Mini App Farcaster dengan Next.js",
-    "ogTitle": "Taik Mini App",
-    "ogDescription": "Mini App Farcaster yang dibuat dengan Next.js",
-    "ogImageUrl": "https://bismillahjadi.vercel.app/og-image.png",
+    "heroImageUrl": "https://your-vercel-domain.vercel.app/og-image.png",
+    "tagline": "Mini App Farcaster modern, siap deploy Vercel",
+    "ogTitle": "Farcaster MiniApp Clean",
+    "ogDescription": "Mini App Farcaster modern, siap deploy Vercel",
+    "ogImageUrl": "https://your-vercel-domain.vercel.app/og-image.png",
     "requiredChains": [
       "eip155:8453"
     ],
     "requiredCapabilities": [
-      "actions.addFrame",
+      "actions.addMiniApp",
+      "actions.composeCast",
       "actions.openUrl",
-      "actions.close",
-      "wallet.getEthereumProvider"
+      "actions.close"
     ]
   }
 } 

@@ -1,18 +1,17 @@
 import { Metadata } from 'next'
-import MiniApp from '@/components/MiniApp'
-
+import MiniApp from '../components/MiniApp'
 export const metadata: Metadata = {
   other: {
     'fc:frame': JSON.stringify({
       version: "next",
-      imageUrl: "https://bismillahjadi.vercel.app/og-image.png",
+      imageUrl: "https://your-vercel-domain.vercel.app/og-image.png",
       button: {
         title: "🚀 Mulai",
         action: {
           type: "launch_frame",
-          name: "Taik Mini App",
-          url: "https://bismillahjadi.vercel.app",
-          splashImageUrl: "https://bismillahjadi.vercel.app/logo.png",
+          name: "Farcaster MiniApp Clean",
+          url: "https://your-vercel-domain.vercel.app",
+          splashImageUrl: "https://your-vercel-domain.vercel.app/logo.png",
           splashBackgroundColor: "#0ea5e9"
         }
       }

@@ -33,9 +33,7 @@
       "actions.addFrame",
       "actions.openUrl",
       "actions.close",
-      "haptics.impactOccurred",
-      "haptics.notificationOccurred",
-      "haptics.selectionChanged"
+      "wallet.getEthereumProvider"
     ]
   }
 } 

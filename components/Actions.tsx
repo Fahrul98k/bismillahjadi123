@@ -29,22 +29,6 @@ export function Actions({ context }: ActionsProps) {
 
   const closeApp = () => handleAction('closeApp', () => sdk.actions.close())
 
-  const triggerHaptic = async (type: 'impact' | 'notification' | 'selection') => {
-    try {
-      const capabilities = await sdk.getCapabilities()
-      
-      if (type === 'impact' && capabilities.includes('haptics.impactOccurred')) {
-        await sdk.haptics.impactOccurred('medium')
-      } else if (type === 'notification' && capabilities.includes('haptics.notificationOccurred')) {
-        await sdk.haptics.notificationOccurred('success')
-      } else if (type === 'selection' && capabilities.includes('haptics.selectionChanged')) {
-        await sdk.haptics.selectionChanged()
-      }
-    } catch (error) {
-      console.error('Haptic error:', error)
-    }
-  }
-
   return (
     <div className="space-y-4">
       <h3 className="font-semibold text-gray-900">🎯 Actions</h3>
@@ -64,29 +48,6 @@ export function Actions({ context }: ActionsProps) {
           className="bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
         >
           {isLoading === 'openUrl' ? '⏳' : '🔗'} Open URL
-        </button>
-
-        <button
-          onClick={() => triggerHaptic('impact')}
-          className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
-        >
-          📳 Impact
-        </button>
-
-        <button
-          onClick={() => triggerHaptic('notification')}
-          className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
-        >
-          🔔 Notify
-        </button>
-      </div>
-
-      <div className="grid grid-cols-1 gap-2">
-        <button
-          onClick={() => triggerHaptic('selection')}
-          className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
-        >
-          ✨ Selection
         </button>
       </div>
 

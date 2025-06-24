@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Farcaster MiniApp Clean',
   description: 'Mini App Farcaster modern, siap deploy Vercel',
-  metadataBase: new URL('https://bismillahjadi-faos.vercel.app'),
+  metadataBase: new URL('https://bismillahjadi12.vercel.app'),
   openGraph: {
     title: 'Farcaster MiniApp Clean',
     description: 'Mini App Farcaster modern, siap deploy Vercel',

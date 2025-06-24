@@ -1,14 +1,16 @@
 {
   "frame": {
-    "version": "1",
     "name": "Farcaster MiniApp Clean",
-    "iconUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
-    "splashImageUrl": "https://bismillahjadi-faos.vercel.app/logo.png",
-    "splashBackgroundColor": "#0ea5e9",
+    "version": "1",
+    "iconUrl": "https://bismillahjadi-faos.vercel.app/icon.png",
     "homeUrl": "https://bismillahjadi-faos.vercel.app",
+    "imageUrl": "https://bismillahjadi-faos.vercel.app/image.png",
+    "splashImageUrl": "https://bismillahjadi-faos.vercel.app/splash.png",
+    "splashBackgroundColor": "#0ea5e9",
+    "webhookUrl": "https://bismillahjadi-faos.vercel.app/api/webhook",
     "subtitle": "Mini App modern Farcaster",
-    "description": "Aplikasi mini modern Next.js dan Farcaster SDK.",
     "primaryCategory": "social",
+    "description": "Aplikasi mini modern Next.js dan Farcaster SDK.",
     "tags": [
       "farcaster",
       "miniapp",
@@ -23,5 +25,10 @@
       "actions.openUrl",
       "actions.close"
     ]
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjIzNzEyMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEU3NUFEMTE3MDE1YzMyMzMwRkQ5NDQxNjhjMDQwRjg3QTcyNmI5MDAifQ",
+    "payload": "eyJkb21haW4iOiJiaXNtaWxsYWhqYWRpLWZhb3MudmVyY2VsLmFwcCJ9",
+    "signature": "MHg4YzgwYzExODYxM2VlMmY3YjMzMjRhNTIxYzc4YjdhMTg5YjhhOTVhYzA5ODEwYTYzOTkwZGQ4MDlhZTMxZGM5MTliNGYwMDI1ZWU0ZDBlOWM0YjQ0MWUyZTkyMmM0ZGNkMGIxMTY1MmNkMWQxYjA3YTQ2ZGU1Y2JiYjg2NDA3YjFj"
   }
 } 

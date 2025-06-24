@@ -21,12 +21,12 @@ export function Actions({ context }: ActionsProps) {
     }
   }
 
-  const addMiniApp = () => handleAction('addMiniApp', () => sdk.actions.addMiniApp())
+  const addFrame = () => handleAction('addFrame', () => sdk.actions.addFrame())
   
   const composeCast = () => handleAction('composeCast', () => 
     sdk.actions.composeCast({
       text: "Saya baru saja mencoba Taik Mini App! 🚀",
-      embeds: ["https://your-domain.com"]
+      embeds: ["https://bismillahjadi.vercel.app"]
     })
   )
 
@@ -62,11 +62,11 @@ export function Actions({ context }: ActionsProps) {
       
       <div className="grid grid-cols-2 gap-3">
         <button
-          onClick={addMiniApp}
-          disabled={isLoading === 'addMiniApp'}
+          onClick={addFrame}
+          disabled={isLoading === 'addFrame'}
           className="bg-blue-500 hover:bg-blue-600 disabled:bg-blue-300 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
         >
-          {isLoading === 'addMiniApp' ? '⏳' : '📱'} Add App
+          {isLoading === 'addFrame' ? '⏳' : '📱'} Add Frame
         </button>
 
         <button

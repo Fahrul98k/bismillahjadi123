@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Taik Mini App',
   description: 'Mini App Farcaster yang dibuat dengan Next.js',
-  metadataBase: new URL('https://your-domain.com'),
+  metadataBase: new URL('https://bismillahjadi.vercel.app'),
   openGraph: {
     title: 'Taik Mini App',
     description: 'Mini App Farcaster yang dibuat dengan Next.js',

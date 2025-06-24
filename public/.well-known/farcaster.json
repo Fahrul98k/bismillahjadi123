@@ -30,12 +30,9 @@
       "eip155:8453"
     ],
     "requiredCapabilities": [
-      "actions.signIn",
-      "wallet.getEthereumProvider",
-      "actions.composeCast",
       "actions.addFrame",
-      "actions.viewProfile",
       "actions.openUrl",
+      "actions.close",
       "haptics.impactOccurred",
       "haptics.notificationOccurred",
       "haptics.selectionChanged"

@@ -23,17 +23,6 @@ export function Actions({ context }: ActionsProps) {
 
   const addFrame = () => handleAction('addFrame', () => sdk.actions.addFrame())
   
-  const composeCast = () => handleAction('composeCast', () => 
-    sdk.actions.composeCast({
-      text: "Saya baru saja mencoba Taik Mini App! 🚀",
-      embeds: ["https://bismillahjadi.vercel.app"]
-    })
-  )
-
-  const viewProfile = () => handleAction('viewProfile', () => 
-    sdk.actions.viewProfile({ fid: 6841 }) // Contoh FID
-  )
-
   const openUrl = () => handleAction('openUrl', () => 
     sdk.actions.openUrl('https://farcaster.xyz')
   )
@@ -70,31 +59,13 @@ export function Actions({ context }: ActionsProps) {
         </button>
 
         <button
-          onClick={composeCast}
-          disabled={isLoading === 'composeCast'}
-          className="bg-green-500 hover:bg-green-600 disabled:bg-green-300 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
-        >
-          {isLoading === 'composeCast' ? '⏳' : '📝'} Compose Cast
-        </button>
-
-        <button
-          onClick={viewProfile}
-          disabled={isLoading === 'viewProfile'}
-          className="bg-purple-500 hover:bg-purple-600 disabled:bg-purple-300 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
-        >
-          {isLoading === 'viewProfile' ? '⏳' : '👤'} View Profile
-        </button>
-
-        <button
           onClick={openUrl}
           disabled={isLoading === 'openUrl'}
           className="bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
         >
           {isLoading === 'openUrl' ? '⏳' : '🔗'} Open URL
         </button>
-      </div>
 
-      <div className="grid grid-cols-3 gap-2">
         <button
           onClick={() => triggerHaptic('impact')}
           className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
@@ -108,12 +79,14 @@ export function Actions({ context }: ActionsProps) {
         >
           🔔 Notify
         </button>
+      </div>
 
+      <div className="grid grid-cols-1 gap-2">
         <button
           onClick={() => triggerHaptic('selection')}
           className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-3 rounded-lg transition-colors text-sm"
         >
-          ✨ Select
+          ✨ Selection
         </button>
       </div>
 

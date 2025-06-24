@@ -7,19 +7,28 @@ export function Capabilities() {
   const [capabilities, setCapabilities] = useState<string[]>([])
   const [chains, setChains] = useState<string[]>([])
   const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const checkCapabilities = async () => {
       try {
+        // Cek apakah SDK tersedia
+        if (!sdk || !sdk.getCapabilities || !sdk.getChains) {
+          setError('SDK tidak tersedia')
+          setIsLoading(false)
+          return
+        }
+
         const [capabilitiesList, chainsList] = await Promise.all([
-          sdk.getCapabilities(),
-          sdk.getChains()
+          sdk.getCapabilities().catch(() => []),
+          sdk.getChains().catch(() => [])
         ])
         
         setCapabilities(capabilitiesList)
         setChains(chainsList)
       } catch (error) {
         console.error('Error checking capabilities:', error)
+        setError('Gagal memuat capabilities')
       } finally {
         setIsLoading(false)
       }
@@ -52,6 +61,17 @@ export function Capabilities() {
           <div className="h-4 bg-gray-200 rounded mb-2"></div>
           <div className="h-4 bg-gray-200 rounded mb-2"></div>
           <div className="h-4 bg-gray-200 rounded"></div>
+        </div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="bg-white border border-gray-200 rounded-xl p-4">
+        <h3 className="font-semibold text-gray-900 mb-3">🔧 Capabilities</h3>
+        <div className="bg-red-50 border border-red-200 rounded-lg p-3">
+          <p className="text-sm text-red-800">❌ {error}</p>
         </div>
       </div>
     )

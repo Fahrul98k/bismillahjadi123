@@ -14,11 +14,20 @@ export default function MiniApp() {
   const [context, setContext] = useState<any>(null)
 
   useEffect(() => {
-    // Ambil context langsung dari sdk lama
-    if (sdk && sdk.context) {
-      setContext(sdk.context)
-      setUser(sdk.context.user)
+    async function fetchContext() {
+      if (sdk && sdk.context) {
+        // Di SDK lama, sdk.context adalah Promise
+        try {
+          const ctx = await sdk.context
+          setContext(ctx)
+          setUser(ctx.user)
+        } catch (e) {
+          setContext(null)
+          setUser(null)
+        }
+      }
     }
+    fetchContext()
   }, [])
 
   return (

@@ -11,7 +11,7 @@ export function WalletConnect() {
   useEffect(() => {
     const checkConnection = async () => {
       try {
-        const provider = sdk.wallet.getEthereumProvider()
+        const provider = await sdk.wallet.getEthereumProvider()
         if (provider) {
           const accounts = await provider.request({ method: 'eth_accounts' })
           if (accounts && accounts.length > 0) {
@@ -30,7 +30,7 @@ export function WalletConnect() {
   const handleConnect = async () => {
     setIsLoading(true)
     try {
-      const provider = sdk.wallet.getEthereumProvider()
+      const provider = await sdk.wallet.getEthereumProvider()
       if (provider) {
         const accounts = await provider.request({ method: 'eth_requestAccounts' })
         if (accounts && accounts.length > 0) {

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import MiniApp from '../components/MiniApp'
+
 export const metadata: Metadata = {
   other: {
     'fc:frame': JSON.stringify({
